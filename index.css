@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: "Lucida Console", monospace, sans-serif;
+}
+
+hr {
+  background-color: white;
+  height: 1px;
+  border: none;
+}
+
+#sidenav {
+  background-color: black;
+  width: 224px;
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  left: 0;
+  justify-content: center;
+  top: 0;
+  z-index: 1;
+  font-size: 24px;
+  border-right: 1px solid white;
+}
+
+#sidenav_name {
+  background-color: cyan;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  cursor: pointer;
+  font-size: 28px;
+  font-family: "Segoe Print";
+  font-weight: bold;
+  position: relative;
+}
+
+.sidenav_section {
+  list-style: none;
+  padding-top: 10px;
+  display: block;
+}
+
+.sidenav_links {
+  overflow-x: hidden;
+  display: flex;
+  text-decoration: none;
+  align-items: right;
+  justify-content: right;
+  border-radius: 4px;
+}
+
+.sidenav_links:hover {
+  background: white;
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  #sidenav {
+    padding-top: 45px;
+    background-color: black;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    left: -300px;
+    justify-content: center;
+    top: 0;
+    z-index: -1;
+    font-size: 24px;
+    border-right: 1px solid white;
+    transition: 0.5s;
+  }
+
+  #sidenav.active { 
+    padding-top: 45px;
+    background-color: black;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    left: 0px;
+    justify-content: center;
+    top: 0;
+    z-index: -1;
+    font-size: 24px;
+    border-right: 1px solid white;
+    transition: all 0.5s ease;
+  }
+
+  #mobile_sidenav { 
+    position: relative;
+    font-size: 35px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
