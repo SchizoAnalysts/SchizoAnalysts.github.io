@@ -40,6 +40,7 @@ hr {
   font-family: "Segoe Print";
   font-weight: bold;
   position: relative;
+  text-decoration: none;
 }
 
 .sidenav_section {
