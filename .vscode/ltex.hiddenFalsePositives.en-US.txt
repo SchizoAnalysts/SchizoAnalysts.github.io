@@ -1,1 +1,0 @@
-{"rule":"EN_UNPAIRED_QUOTES","sentence":"^\\Q$(function(){ $(\"#nav-placeholder\").load(\"/sidebar.html\"); });\\E$"}
