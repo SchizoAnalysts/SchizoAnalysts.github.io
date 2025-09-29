@@ -1,3 +1,9 @@
+/* 
+Default css to be used for all website related stuff.
+This need to be linked in each html file for navigation bar to render correctly 
+unless it has its own specific css file. 
+*/
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,7 +25,6 @@ hr {
   position: fixed;
   height: 100vh;
   display: flex;
-  left: 0;
   justify-content: center;
   top: 0;
   z-index: 1;
@@ -63,6 +68,12 @@ hr {
   color: black;
 }
 
+.mainbody { 
+  z-index: 1;
+  padding-left: 245px;
+  padding-top: 10px
+}
+
 @media screen and (max-width: 800px) {
   #sidenav {
     padding-top: 45px;
@@ -70,7 +81,7 @@ hr {
     position: fixed;
     height: 100vh;
     display: flex;
-    left: -300px;
+    transform: translateX(-100%);
     justify-content: center;
     top: 0;
     z-index: -1;
@@ -79,19 +90,15 @@ hr {
     transition: 0.5s;
   }
 
-  .active { 
-    padding-top: 45px;
-    background-color: black;
-    position: fixed;
-    height: 100vh;
-    display: flex;
-    left: 0px;
-    justify-content: center;
-    top: 0;
-    z-index: 1;
-    font-size: 24px;
-    border-right: 1px solid white;
-    transition: all 0.5s ease;
+  #sidenav.open { 
+    transform: translateX(0%);
+    z-index: 5;
+  }
+
+  .mainbody{ 
+    z-index: 1; 
+    padding-left: 10px;
+    padding-top: 70px;
   }
 
   #mobile_sidenav { 
