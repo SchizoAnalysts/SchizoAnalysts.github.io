@@ -79,7 +79,7 @@ hr {
     transition: 0.5s;
   }
 
-  #sidenav.active { 
+  .active { 
     padding-top: 45px;
     background-color: black;
     position: fixed;
