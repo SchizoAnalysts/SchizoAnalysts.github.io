@@ -1,5 +1,5 @@
-const menu = document.querySelector("#sidenav"); 
+const menu = document.getElementById('#sidenav'); 
 
-document.querySelector('#mobile_sidenav').addEventListener("click", function () { 
-  menu.classList.toggle("active");
+document.getElementById('#mobile_sidenav').addEventListener('click', function () { 
+  menu.classList.toggle('active');
 });
